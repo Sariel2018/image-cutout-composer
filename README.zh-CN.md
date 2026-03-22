@@ -45,7 +45,7 @@ image-cutout-composer/
 说明：
 
 - `old/` 可作为你的本地归档目录，但默认不会上传到 GitHub。
-- `jobs/` 是脚本运行时的本地工作目录，已全部加入 git 忽略，不会上传。
+- `jobs/` 是脚本运行产生的本地中间产物工作区（`input/`、`extract/`、`output/`、`layout.json`），已全部加入 git 忽略，不会上传。
 
 ## 环境安装
 
@@ -59,31 +59,38 @@ python3 -m venv .venv
 1. 新建任务：
 
 ```bash
+JOB_NAME=my_job
 .venv/bin/python scripts/new_job.py \
-  --job my_job \
+  --job "$JOB_NAME" \
   --source /path/to/source.png \
   --reference /path/to/reference.webp
 ```
 
-2. 自动拆图：
+2. 设置任务目录（`new_job.py` 默认会创建该路径）：
 
 ```bash
-.venv/bin/python scripts/extract_sprites.py --job-dir jobs/my_job
+JOB_DIR="jobs/$JOB_NAME"
 ```
 
-3. 打开 `extract/contact_sheet.png`，编辑 `jobs/my_job/layout.json`。
-
-4. 合成输出：
+3. 自动拆图：
 
 ```bash
-.venv/bin/python scripts/compose_layout.py --job-dir jobs/my_job --style compact
+.venv/bin/python scripts/extract_sprites.py --job-dir "$JOB_DIR"
 ```
 
-5. 可选：严格网格切帧 + 调边：
+4. 打开 `"$JOB_DIR/extract/contact_sheet.png"`，编辑 `"$JOB_DIR/layout.json"`。
+
+5. 合成输出：
+
+```bash
+.venv/bin/python scripts/compose_layout.py --job-dir "$JOB_DIR" --style compact
+```
+
+6. 可选：严格网格切帧 + 调边：
 
 ```bash
 .venv/bin/python scripts/compose_reference_grid.py \
-  --job-dir jobs/my_job \
+  --job-dir "$JOB_DIR" \
   --frame-width 256 \
   --frame-height 256 \
   --defringe-white \
