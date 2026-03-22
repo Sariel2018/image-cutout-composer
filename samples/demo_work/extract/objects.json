@@ -1,0 +1,179 @@
+{
+  "job_dir": "jobs/demo_work",
+  "source": "jobs/demo_work/input/source.png",
+  "image_width": 1018,
+  "image_height": 228,
+  "segmentation_mode_requested": "auto",
+  "segmentation_mode_used": "checker",
+  "alpha_threshold": 8,
+  "bg_gray_low": 185,
+  "bg_gray_high": 252,
+  "bg_chroma_tol": 12,
+  "min_area": 20,
+  "padding": 2,
+  "merge_floating_symbols": true,
+  "merged_floating_symbol_count": 0,
+  "count": 8,
+  "objects": [
+    {
+      "id": 1,
+      "file_name": "sprite_001.png",
+      "file": "crops/sprite_001.png",
+      "raw_bbox": [
+        0,
+        16,
+        2,
+        227
+      ],
+      "bbox": [
+        0,
+        14,
+        4,
+        227
+      ],
+      "width": 5,
+      "height": 214,
+      "area": 633
+    },
+    {
+      "id": 2,
+      "file_name": "sprite_002.png",
+      "file": "crops/sprite_002.png",
+      "raw_bbox": [
+        20,
+        27,
+        181,
+        221
+      ],
+      "bbox": [
+        18,
+        25,
+        183,
+        223
+      ],
+      "width": 166,
+      "height": 199,
+      "area": 19217
+    },
+    {
+      "id": 3,
+      "file_name": "sprite_003.png",
+      "file": "crops/sprite_003.png",
+      "raw_bbox": [
+        198,
+        27,
+        358,
+        221
+      ],
+      "bbox": [
+        196,
+        25,
+        360,
+        223
+      ],
+      "width": 165,
+      "height": 199,
+      "area": 20553
+    },
+    {
+      "id": 4,
+      "file_name": "sprite_004.png",
+      "file": "crops/sprite_004.png",
+      "raw_bbox": [
+        382,
+        27,
+        528,
+        221
+      ],
+      "bbox": [
+        380,
+        25,
+        530,
+        223
+      ],
+      "width": 151,
+      "height": 199,
+      "area": 18788
+    },
+    {
+      "id": 5,
+      "file_name": "sprite_005.png",
+      "file": "crops/sprite_005.png",
+      "raw_bbox": [
+        549,
+        27,
+        685,
+        221
+      ],
+      "bbox": [
+        547,
+        25,
+        687,
+        223
+      ],
+      "width": 141,
+      "height": 199,
+      "area": 18734
+    },
+    {
+      "id": 6,
+      "file_name": "sprite_006.png",
+      "file": "crops/sprite_006.png",
+      "raw_bbox": [
+        708,
+        27,
+        855,
+        221
+      ],
+      "bbox": [
+        706,
+        25,
+        857,
+        223
+      ],
+      "width": 152,
+      "height": 199,
+      "area": 19115
+    },
+    {
+      "id": 7,
+      "file_name": "sprite_007.png",
+      "file": "crops/sprite_007.png",
+      "raw_bbox": [
+        875,
+        27,
+        1012,
+        223
+      ],
+      "bbox": [
+        873,
+        25,
+        1014,
+        225
+      ],
+      "width": 142,
+      "height": 201,
+      "area": 18490
+    },
+    {
+      "id": 8,
+      "file_name": "sprite_008.png",
+      "file": "crops/sprite_008.png",
+      "raw_bbox": [
+        790,
+        28,
+        801,
+        36
+      ],
+      "bbox": [
+        788,
+        26,
+        803,
+        38
+      ],
+      "width": 16,
+      "height": 13,
+      "area": 36
+    }
+  ]
+}

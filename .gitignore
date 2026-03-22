@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# Local env/config
+.env
+.env.*
+
+# Generated job artifacts (large, machine-local)
+jobs/**
+!jobs/.gitkeep
+!jobs/README.md
+!jobs/demo_work/
+jobs/demo_work/**
+!jobs/demo_work/README.md
+!jobs/demo_work/layout.json
+!jobs/demo_work/input/
+!jobs/demo_work/input/.gitkeep
+!jobs/demo_work/extract/
+!jobs/demo_work/extract/.gitkeep
+!jobs/demo_work/output/
+!jobs/demo_work/output/.gitkeep
+
+# Local archive bucket (never publish raw history/assets)
+old/**

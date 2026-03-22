@@ -1,0 +1,10 @@
+{
+  "canvas": {
+    "width": 1800,
+    "height": 900
+  },
+  "rows": [
+    [2, 3, 4, 5, 6, 7]
+  ],
+  "notes": "Release sample: compose sprite IDs 002-007 from demo source."
+}

@@ -1,0 +1,74 @@
+{
+  "canvas": {
+    "width": 1800,
+    "height": 900
+  },
+  "style": "compact",
+  "reference": "",
+  "rows": [
+    [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "placements": [
+    {
+      "id": 2,
+      "row": 1,
+      "column": 1,
+      "x": 24,
+      "y": 406,
+      "width": 310,
+      "height": 372
+    },
+    {
+      "id": 3,
+      "row": 1,
+      "column": 2,
+      "x": 342,
+      "y": 406,
+      "width": 309,
+      "height": 372
+    },
+    {
+      "id": 4,
+      "row": 1,
+      "column": 3,
+      "x": 659,
+      "y": 406,
+      "width": 283,
+      "height": 372
+    },
+    {
+      "id": 5,
+      "row": 1,
+      "column": 4,
+      "x": 950,
+      "y": 406,
+      "width": 263,
+      "height": 372
+    },
+    {
+      "id": 6,
+      "row": 1,
+      "column": 5,
+      "x": 1221,
+      "y": 406,
+      "width": 284,
+      "height": 372
+    },
+    {
+      "id": 7,
+      "row": 1,
+      "column": 6,
+      "x": 1513,
+      "y": 406,
+      "width": 263,
+      "height": 372
+    }
+  ]
+}
