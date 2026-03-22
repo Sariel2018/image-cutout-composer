@@ -98,6 +98,15 @@ JOB_DIR="jobs/$JOB_NAME"
   --blacken-fringe
 ```
 
+## 贡献者
+
+- [@Sariel2018](https://github.com/Sariel2018)
+
+## 致谢（AI）
+
+- OpenAI Codex（ChatGPT）：提供实现、重构与文档整理支持。
+- 所有 AI 协助产出均由仓库维护者审核后合并。
+
 ## 许可证
 
 代码使用 MIT（见 `LICENSE`）。

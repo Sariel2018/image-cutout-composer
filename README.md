@@ -98,6 +98,15 @@ JOB_DIR="jobs/$JOB_NAME"
   --blacken-fringe
 ```
 
+## Contributors
+
+- [@Sariel2018](https://github.com/Sariel2018)
+
+## Credits
+
+- OpenAI Codex (ChatGPT): implementation, refactoring, and documentation assistance.
+- All AI-assisted changes are reviewed and merged by the repository maintainer.
+
 ## License
 
 Code is licensed under MIT (`LICENSE`).
