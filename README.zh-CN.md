@@ -39,15 +39,13 @@ image-cutout-composer/
   docs/
   samples/
     demo_work/
-  jobs/
-    demo_work/   # 仅保留可公开的最小占位配置
   requirements.txt
 ```
 
 说明：
 
 - `old/` 可作为你的本地归档目录，但默认不会上传到 GitHub。
-- `jobs/` 下的生成产物默认忽略，只放行最小 demo 占位文件。
+- `jobs/` 是脚本运行时的本地工作目录，已全部加入 git 忽略，不会上传。
 
 ## 环境安装
 
@@ -100,4 +98,3 @@ python3 -m venv .venv
 ## 素材权利
 
 图片/角色素材与代码许可证分离，详见 `ASSETS_LICENSE.md`。
-
