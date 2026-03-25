@@ -10,10 +10,24 @@
 
 ## 文档入口
 
-- 工具说明：`docs/tool-overview.md`
-- 流程图：`docs/workflow.md`
-- 参数手册：`docs/cli-reference.md`
-- 公开样例：`samples/demo_work/README.md`
+- [工具说明](docs/tool-overview.md)
+- [流程图说明](docs/workflow.md)
+- [CLI 参数手册](docs/cli-reference.md)
+- [公开样例说明](samples/demo_work/README.md)
+
+## 流程概览
+
+```mermaid
+flowchart LR
+    A[input/source.png] --> B[new_job.py]
+    B --> C[extract_sprites.py]
+    C --> D[extract/contact_sheet.png]
+    D --> E[edit layout.json]
+    E --> F[compose_layout.py]
+    E --> G[compose_reference_grid.py]
+    F --> H[output/final.png + final.webp]
+    G --> I[output/final3.png + final3.webp]
+```
 
 项目治理文件：
 

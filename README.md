@@ -10,10 +10,24 @@ A lightweight toolkit for animation-asset production workflows:
 
 ## Documentation
 
-- CN overview: `docs/tool-overview.md`
-- Workflow diagram: `docs/workflow.md`
-- CLI parameter reference: `docs/cli-reference.md`
-- Public sample: `samples/demo_work/README.md`
+- [Tool overview (CN)](docs/tool-overview.md)
+- [Workflow diagram](docs/workflow.md)
+- [CLI parameter reference (CN)](docs/cli-reference.md)
+- [Public sample walkthrough](samples/demo_work/README.md)
+
+## Pipeline at a Glance
+
+```mermaid
+flowchart LR
+    A[input/source.png] --> B[new_job.py]
+    B --> C[extract_sprites.py]
+    C --> D[extract/contact_sheet.png]
+    D --> E[edit layout.json]
+    E --> F[compose_layout.py]
+    E --> G[compose_reference_grid.py]
+    F --> H[output/final.png + final.webp]
+    G --> I[output/final3.png + final3.webp]
+```
 
 Project policies:
 
